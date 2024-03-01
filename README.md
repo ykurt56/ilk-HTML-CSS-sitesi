@@ -1,4 +1,4 @@
-# Kodluyoruz Html Bölüm Sonu Çalışması
+# Kodluyoruz İle CSS Çalışmam
 
 Kodluyoruz **Html + CSS Eğitimi** kapsamında yaptığım çalışma
 
