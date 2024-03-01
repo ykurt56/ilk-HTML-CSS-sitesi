@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #e4e2da;
+    margin: auto;
+    padding: auto;
+    height: 50px;
+    top: 0;
+    z-index: 9999; /* Diğer elementlerin üzerinde olacak şekilde yüksek bir z-index değeri */
+
+}
+nav{
+    display: block;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    height: 50px;
+    
+
+}
+nav ul li{
+    list-style-type: none;
+    float: left;
+    height: 50px;
+    display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    padding: 10px;    
+    margin: 50px;
+}
+
+nav ul li a:hover{
+    color:white;
+    padding: 10px;    
+    background-color: black;
+    border-radius: 10px;
+    border-color: white;
+    border-style:solid
+}
+.banner{
+    height: 665px;
+    background-size: cover;
+    position: relative;
+    background-color:#3d445c;
+    display: block;
+}
+
+
+
+.bannermetin {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.bannermetin h1{
+    font-size: 30px;
+}
+
+.bannerurun{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-style: dashed;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.bannerurun img{
+    width: 350px; /* Resmi kartın içinde genişlet */
+    height: auto;
+    display: block;
+    padding-right: 50px;
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom;
+    transition: transform 0.3s;
+    transform: scale(0.8);
+    filter: grayscale(100);
+ }
+
+ .bannerurun img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+
+ }
+ .bannerurun h2,p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .urunhakkinda{
+    width: 200px;
+    height: 250px;
+    float: right;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    right: 50%;
+    transform: translate(300%, -50%);
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+
+
+ }
+
+ button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+ button:hover {
+    background-color: #45a049;
+    
+}
+
+.bannerurun:hover{
+  background-color: #000000;
+  color: white;
+}
+
+.urunhakkinda2{
+    width: 200px;
+    height: 250px;
+    float: right;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+
+
+ }
+
+
+.hakkimizda{
+    background-color:#56585b ;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+
+
+.hakkimizdametin h3 {
+    text-align: center;
+    color: #456789;
+    font-size: 50px;
+    position: relative;
+    display: block;
+}
+.hakkimizdametin{
+    text-align: center;
+    height: 250px;
+    width: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(+50%, +50%);
+    overflow: auto;
+}
+
+.iletisimbanner{
+    height: 1060px;
+    background-size: cover;
+    position: relative;
+    background-color:#3d445c;
+    display: block;
+}
+
+.iletisim{
+    height: 1000px;
+    background-size: cover;
+    position: relative; 
+background-color: #ffffff;    
+display: block;
+}
+
+
+.iletisim h2 {
+    padding-top:  20px;
+    text-align: center;
+    color: #456789;
+    font-size: 50px;
+}
+.iletisimcard{
+    text-align: center;
+    height: 250px;
+    width: 20%;
+    background-color:  antiquewhite;
+    top: 50%;
+    left: 50%;
+    float: left;
+    border-radius: 25px;
+    margin: 50px;
+    overflow: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(+50%, +15%);
+    border-style: solid;
+
+}
+
+.iletisimcardbackground{
+    width: 100%;
+    height: 275px;
+    background-color: #45a049;
+    margin-top: 75px;
+}
+
+.ilesimegecin{
+    width: 100%;
+    height: 550px;
+    background-color: aquamarine;
+    margin-top: 55px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    
+
+}
+
+.ilesimegecin h3{
+        padding-top: 15px;
+        font-size: 25px;
+        color:rgb(0, 0, 0);
+        text-align: center;
+}
+.iletisimform{
+    margin: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 12px;
+  display: inline-block;
+  float: left;
+
+}
+
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+  
+
+ footer{
+ 
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+
+ }
+ 
